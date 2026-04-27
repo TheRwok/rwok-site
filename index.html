@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>THE RWOK | Just Bwing It</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#000;
+color:white;
+text-align:center;
+}
+
+.hero{
+padding:60px 20px 100px;
+background:linear-gradient(180deg,#111,#000);
+}
+
+.hero img{
+width:320px;
+max-width:85%;
+margin-bottom:25px;
+border:6px solid #ffd700;
+border-radius:20px;
+}
+
+h1{
+font-size:74px;
+margin:0;
+letter-spacing:4px;
+}
+
+.gold{
+color:#ffd700;
+}
+
+h2{
+font-size:38px;
+margin:10px 0 20px;
+}
+
+p{
+max-width:760px;
+margin:auto;
+font-size:20px;
+line-height:1.6;
+}
+
+.btn{
+display:inline-block;
+margin:12px;
+padding:18px 36px;
+background:#ffd700;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:14px;
+}
+
+.ticker{
+background:#ffd700;
+color:#000;
+padding:14px;
+font-weight:bold;
+overflow:hidden;
+white-space:nowrap;
+}
+
+.scroll{
+display:inline-block;
+padding-left:100%;
+animation:move 18s linear infinite;
+}
+
+@keyframes move{
+from{transform:translateX(0);}
+to{transform:translateX(-100%);}
+}
+
+section{
+padding:80px 20px;
+}
+
+.card{
+max-width:850px;
+background:#111;
+margin:25px auto;
+padding:35px;
+border-radius:25px;
+box-shadow:0 0 25px rgba(255,215,0,.12);
+}
+
+.stat{
+font-size:48px;
+margin:25px 0;
+color:#ffd700;
+font-weight:bold;
+}
+
+button{
+padding:18px 30px;
+margin:10px;
+border:none;
+background:#ffd700;
+font-size:22px;
+font-weight:bold;
+border-radius:12px;
+cursor:pointer;
+}
+
+#meter{
+font-size:60px;
+margin-top:30px;
+color:#ffd700;
+}
+
+footer{
+background:#111;
+padding:70px 20px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="ticker">
+<div class="scroll">
+🔥 JUST BWING IT • ROCK BOTTOM THE BEARS • PEOPLE'S ELBOW THE MARKET • THE RWOK IS COOKING 🔥
+</div>
+</div>
+
+<section class="hero">
+
+<!-- Replace rwok.png with your image -->
+<img src="rwok.png">
+
+<h1>THE <span class="gold">RWOK</span></h1>
+
+<h2>JUST BWING IT.</h2>
+
+<p>
+Can You Smell What The Rwok Is Cooking?<br><br>
+
+Born from MS Paint.<br>
+Forged in memes.<br>
+Sent to suplex weak hands.
+</p>
+
+<br>
+
+<a href="#" class="btn">BUY $RWOK</a>
+<a href="#" class="btn">JOIN CULT</a>
+<a href="#" class="btn">VIEW CHART</a>
+
+</section>
+
+<section>
+<h2 class="gold">The Prophecy</h2>
+
+<div class="card">
+<p>
+Not Rock.
+
+Rwok.
+
+The People's Memecoin.
+
+No utility.
+
+No roadmap.
+
+Only eyebrow.
+
+Only bwing.
+</p>
+</div>
+
+</section>
+
+<section>
+
+<h2 class="gold">Cult Stats</h2>
+
+<div class="stat">13,742 HOLDERS</div>
+<div class="stat">98,221 WEAK HANDS SUPLEXED</div>
+<div class="stat">∞ Bwing Energy</div>
+
+</section>
+
+<section>
+
+<h2 class="gold">Tokenomics</h2>
+
+<div class="card">
+<p>
+Ticker: RWOK <br>
+Supply: 1,000,000,000 <br>
+Tax: 0% <br>
+Utility: People's Elbow
+</p>
+</div>
+
+</section>
+
+<section>
+
+<h2 class="gold">Bwingmap</h2>
+
+<div class="card">
+Phase 1 — Cooking
+</div>
+
+<div class="card">
+Phase 2 — Suplex
+</div>
+
+<div class="card">
+Phase 3 — Wrestlemania
+</div>
+
+</section>
+
+<section>
+
+<h2 class="gold">
+Summon The Rwok
+</h2>
+
+<button onclick="bwing()">
+Raise Eyebrow
+</button>
+
+<button onclick="elbow()">
+People's Elbow
+</button>
+
+<div id="meter">
+Bwing Power: 0
+</div>
+
+</section>
+
+<footer>
+
+<h1 class="gold">$RWOK</h1>
+
+<p>
+Built in MS Paint.<br>
+Powered by Delusion.<br>
+Backed by Eyebrow.
+</p>
+
+</footer>
+
+<script>
+
+let power=0;
+
+function bwing(){
+power+=100;
+document.getElementById("meter").innerHTML=
+"Bwing Power: "+power;
+alert("JUST BWING IT");
+}
+
+function elbow(){
+document.body.style.transform="translateX(15px)";
+setTimeout(()=>document.body.style.transform="translateX(-15px)",100);
+setTimeout(()=>document.body.style.transform="translateX(0)",200);
+alert("THE PEOPLE'S ELBOW HAS BEEN DEPLOYED");
+}
+
+</script>
+
+</body>
+</html>
