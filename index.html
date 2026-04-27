@@ -284,7 +284,13 @@ Backed by Eyebrow.
 <script>
 
 let power=0;
+function copyCA(){
+navigator.clipboard.writeText(
+"RWOK111111111111111111111"
+);
 
+alert("Contract copied. JUST BWING IT.");
+}
 function bwing(){
 power+=100;
 document.getElementById("meter").innerHTML=
